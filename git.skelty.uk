@@ -1,0 +1,8 @@
+server {
+    listen       80;
+    server_name  git.skelty.uk;
+
+    location / {
+        proxy_pass http://localhost:10080;
+    }
+}
